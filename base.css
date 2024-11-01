@@ -1,0 +1,71 @@
+body {
+    /** define custom properties so we can reference and change styles easily */
+    --etsy-orange:#f1641e;
+    --text-demand: #d00739;
+    --price-color: #0f743b ;
+    --sale-color: #a0e193;
+    --markdown: #dff7af;
+    --footer-light: #3b67d9 ;
+    --footer-app: #122868;
+    --footer-bright:#2638c0; 
+
+    color: var(--black);
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background color should be accent-background */
+    display:flex;
+    background-color: white;
+    justify-content:space-between;
+}
+
+nav ul {
+    /* something should go here */
+    color:white;
+}
+
+nav ul a {
+    /* color should be accent-background-text */
+    color:white
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+nav ul li button{
+    border-radius: 50;
+    border-color: white;
+    background-color: white;
+}
+
+ul.navigate{
+    display: flex;
+    flex-direction: row; /* by default, display-flex has flex-direction: row */
+    list-style: none;
+    gap: 16px;
+}
+
+section.Energy{
+    background-color: var(--footer-light);
+}
+
+aside.App{
+    background-color: var(--footer-app);
+}
+
+main.footer{
+    background-color: var(--footer-bright);
+}
+
+footer p{
+    color: white;
+}
+
+footer ul a{
+    color: white;
+}
+footer ul {
+    color: white;
+}

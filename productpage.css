@@ -1,0 +1,39 @@
+aside{
+    float: right;
+    background-color: white;
+    max-width: 30%;
+}
+
+
+.carousel {
+    display: flex;
+    height: 300px;
+}
+
+.carousel-track {
+    display: flex;
+    flex-direction: column;
+    width: 100px; 
+    overflow: hidden;
+    align-items: center;
+}
+
+.carousel img, .carousel video {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.carousel-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.carousel-main img, .carousel-main video {
+    width: 300px;
+    height: auto;
+}
