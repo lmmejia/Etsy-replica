@@ -3,13 +3,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width:auto;
     background-color: #ffffff;
-    padding: 10 px 20 px;
+    padding: 12 px 36 px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img{
-    height: 40px;
+    height: 60px;
 }
 
 .categories-button{
@@ -26,16 +27,20 @@ header{
 .search-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    max width: 600px;
+    margin: auto;
     gap: 5px;
-    border: 1px solid #ddd;
+    border: 2px solid #222222;
     border-radius: 4px;
     padding: 5px;
 }
 
-.search-bar input[ype="text"]{
+.search-bar input[type="text"]{
     border: none;
     padding: 5px;
-    width: 200px;
+    width: 100%;
     font-size: 16px;
 }
 
@@ -54,6 +59,7 @@ header{
 .header-links{
     list-style: none;
     display: flex;
+    padding: 9px 42px 9px 18px;
     gap: 20px;
     margin-left: auto;
 }
@@ -183,4 +189,18 @@ body {
 .subtotal-item .subtotal-price {
     font-weight: bold;
     color: #333;
+}
+
+.payment-methods{
+    display: flex
+}
+
+.etsylogo{
+    height: 80px;
+    fill: darkorange
+}
+
+.categories-button{
+    /* padding: 9px 15px; */
+    /* height: 10px; */
 }
