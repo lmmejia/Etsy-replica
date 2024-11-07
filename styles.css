@@ -6,7 +6,16 @@ header{
     width:auto;
     background-color: #ffffff;
     padding: 12 px 36 px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #0000001a;
+    list-style-type: none;
+}
+
+nav ul{ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex:inline;
 }
 
 .logo img{
@@ -27,20 +36,29 @@ header{
 .search-bar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     max width: 600px;
     margin: auto;
     gap: 5px;
     border: 2px solid #222222;
-    border-radius: 4px;
+    border-radius: 36px;
     padding: 5px;
 }
 
+.search-form {
+    display: flex; 
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
 .search-bar input[type="text"]{
     border: none;
-    padding: 5px;
-    width: 100%;
+    padding: 6px;
+    width: 88%;
     font-size: 16px;
 }
 
@@ -77,9 +95,9 @@ body {
 }
 
 .cart-container {
-    width: 50%;
+    width: 75%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +116,7 @@ body {
 .cart-item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding-right: 50%;
     border-bottom: 1px solid #ddd;
 }
 
@@ -144,6 +162,9 @@ body {
 }
 
 .checkout {
+    display: flex;
+    flex-direction:column;
+    padding-left: 75%;
     margin-top: 20px;
 }
 
@@ -165,7 +186,7 @@ body {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 24px;
     font-size: 1em;
     cursor: pointer;
 }
@@ -191,16 +212,41 @@ body {
     color: #333;
 }
 
-.payment-methods{
-    display: flex
-}
-
 .etsylogo{
-    height: 80px;
+    height: 60px;
     fill: darkorange
 }
 
-.categories-button{
-    /* padding: 9px 15px; */
-    /* height: 10px; */
+.categories-button {
+    display: flex;
+    padding: 9px 15px; 
+    height: 5px;
 }
+
+
+
+.payment-methods {
+    display: flex;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.coupon-code-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 0px 0px 0px -15px;
+    padding: 9px 15px;
+    font: 12.99px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+
+}
+
+
