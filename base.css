@@ -38,6 +38,7 @@ nav ul li button{
     border-radius: 50;
     border-color: white;
     background-color: white;
+    border-style: solid;
 }
 
 ul.navigate{
@@ -47,9 +48,6 @@ ul.navigate{
     gap: 16px;
 }
 
-section.Energy{
-    background-color: var(--footer-light);
-}
 
 aside.App{
     background-color: var(--footer-app);
