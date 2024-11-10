@@ -14,12 +14,18 @@ body {
     margin: 0;
     padding: 0;
 }
+/* NAV */
 
 nav {
     /* background color should be accent-background */
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
     background-color: white;
-    justify-content:space-between;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
 }
 
 nav ul {
@@ -34,16 +40,96 @@ nav ul a {
     margin-right: 25px;
 }
 
-nav ul li button{
-    border-radius: 50;
-    border-color: white;
+.categories {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-container {
+    position: relative;
+    width: 100%; 
+    max-width: 400px; 
+}
+
+.search{
+    width: 100%;
+    max-width: 50rem;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-button {
+    background-color: var(--etsy-orange);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.navigate-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.navigate-user img{
+    width: 20px;
+    height: 20px;
+}
+
+.navigate-user a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navigate-links {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
     background-color: white;
-    border-style: solid;
+    border-top: 1px solid #ddd;
+    gap: 20px;
+    border-radius: 50;
+}
+
+.navigate-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navigate-links button :hover {
+    background-color: lightgray;
+    border-radius: 12px;
+}
+
+.navigate-links button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
 }
 
 ul.navigate{
     display: flex;
-    flex-direction: row; /* by default, display-flex has flex-direction: row */
+    flex-direction: row;
     list-style: none;
     gap: 16px;
 }
@@ -53,17 +139,23 @@ aside.App{
     background-color: var(--footer-app);
 }
 
+/* Footer */
+
 main.footer{
     background-color: var(--footer-bright);
 }
 
+footer h{
+    color: white;
+}
 footer p{
     color: white;
 }
 
 footer ul a{
     color: white;
+    text-decoration: none;
 }
 footer ul {
-    color: white;
+    color: var(--footer-bright)
 }
