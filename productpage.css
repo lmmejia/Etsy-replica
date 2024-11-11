@@ -1,0 +1,323 @@
+/* SVG stylings */
+.Etsy-logo {
+    height: 40px;
+    fill: var(--etsy-orange);
+}
+.Arrow {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.Download {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.Paperclip {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.Present {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* aside */
+aside{
+    float: right;
+    background-color: white;
+    max-width: 30%;
+}
+
+/* main */
+/* Main Carousel Container */
+.carousel {
+    display: inline-block;
+    width: 120px;
+    height: 600px; /* Adjust height for a taller view */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded edges for a modern look */
+    background-color: #f9f9f9; /* Light grey for a clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Vertical Carousel Track */
+.carousel-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll; /* Enable vertical scroll */
+    scroll-behavior: smooth; /* Smooth scrolling for a pleasant user experience */
+    padding: 10px;
+}
+
+/* Thumbnail Items in Track */
+.carousel-track img, .carousel-track video {
+    width: 100px;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px; /* Rounded corners on thumbnails */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.carousel-track img:hover, .carousel-track video:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Main Display for Selected Item */
+.carousel-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.carousel-main img, .carousel-main video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Active Item Highlight */
+.carousel-track img.active, .carousel-track video.active {
+    border: 2px solid #333;
+}
+
+.scroll-up, .scroll-down {
+    box-shadow: 2px 2px 4px color: gray;
+    background-color: white
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.scroll-up:hover, .scroll-down:hover {
+    background-color: #555;
+}
+
+section.Energy{
+    background-color: var(--footer-light);
+}
+
+/* product description aside */
+
+.product {
+    max-width: 33%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Product Title and Price */
+h1 {
+    font-size: 18px;
+    color: #d00739;
+    margin-bottom: 10px;
+}
+.price{
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--price-color);
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.discount {
+    color: var(--price-color);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.sale-end {
+    color: var(--price-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.special-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--markdown);
+    gap: 4px;
+    border-radius: 10px;
+    height: 2.5rem;
+}
+
+.special-info img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.markdown{
+    font-weight: bold;
+}
+.special-info p {
+    font-size: 14px;
+    color: black;
+}
+
+
+.product-description {
+    padding-right: 2rem;
+    font-size: 1rem;
+    color: rgb(86, 86, 86);
+    margin-bottom: 20px;
+}
+
+
+.seller-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seller-info a {
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.seller-info img {
+    width: 18px;
+    margin-right: 6px;
+}
+
+/* Payment Info Section */
+.payment-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.payment-info img {
+    width: 90px;
+    vertical-align: middle;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-to-cart a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Star Seller Info Section */
+.star-seller-info p {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.star-seller-info img {
+    width: 16px;
+    margin-right: 8px;
+
+}
+
+.seller-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+.add-to-cart:hover {
+    background-color: #6c6c6c; /* Darker red when hovering */
+}
+
+/* drop down */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+/* footer */
+.energy{
+    display: flex;
+    justify-content: center;
+    flex:1;
+    min-width: 200px;
+}
+
+.energy p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app{
+    flex: 0 0 auto;
+    order:-1;
+}
+.download-app {
+    color: white;
+    text-decoration: none;
+}
+
+.download-app{
+    background-color: var(--footer-bright);
+    border: none;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
