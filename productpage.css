@@ -308,12 +308,12 @@ details[open] summary {
     flex: 0 0 auto;
     order:-1;
 }
-button a {
+.download-app {
     color: white;
     text-decoration: none;
 }
 
-button {
+.download-app{
     background-color: var(--footer-bright);
     border: none;
     color: white;
