@@ -12,7 +12,12 @@
     height: 1.5rem;
     width: 1.5rem;
 }
-.Paperclip{
+.Paperclip {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.Present {
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -108,7 +113,7 @@ section.Energy{
 /* product description aside */
 
 .product {
-    max-width: 600px;
+    max-width: 33%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -120,9 +125,14 @@ section.Energy{
 /* Product Title and Price */
 h1 {
     font-size: 18px;
-    font-weight: bold;
-    color: maroon;
+    color: #d00739;
     margin-bottom: 10px;
+}
+.price{
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    gap: 10px;
+    margin-bottom: 8px;
 }
 
 h2 {
@@ -143,14 +153,14 @@ h2 {
     color: var(--price-color);
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .sale-end {
     color: var(--price-color);
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .special-info {
@@ -158,6 +168,9 @@ h2 {
     align-items: center;
     margin-bottom: 20px;
     background-color: var(--markdown);
+    gap: 4px;
+    border-radius: 10px;
+    height: 2.5rem;
 }
 
 .special-info img {
@@ -165,19 +178,23 @@ h2 {
     margin-right: 8px;
 }
 
+.markdown{
+    font-weight: bold;
+}
 .special-info p {
     font-size: 14px;
-    color: #888;
+    color: black;
 }
 
-/* Product Description */
+
 .product-description {
-    font-size: 14px;
-    color: #333;
+    padding-right: 2rem;
+    font-size: 1rem;
+    color: rgb(86, 86, 86);
     margin-bottom: 20px;
 }
 
-/* Seller Info Section */
+
 .seller-info {
     display: flex;
     align-items: center;
@@ -186,7 +203,7 @@ h2 {
 
 .seller-info a {
     font-weight: bold;
-    color: #0077b6;
+    color: black;
     margin-right: 10px;
     text-decoration: none;
 }
@@ -238,19 +255,17 @@ h2 {
 .star-seller-info img {
     width: 16px;
     margin-right: 8px;
-}
 
-/* Hover Effects */
-.add-to-cart:hover {
-    background-color: #c42d2a; /* Darker red when hovering */
 }
 
 .seller-info a:hover {
     text-decoration: underline;
 }
 
-.product-description:hover {
-    color: #0077b6;
+
+
+.add-to-cart:hover {
+    background-color: #6c6c6c; /* Darker red when hovering */
 }
 
 /* drop down */
@@ -263,7 +278,7 @@ details {
 summary {
     font-weight: bold;
     margin: -0.5em -0.5em 0;
-        padding: 0.5em;
+    padding: 0.5em;
 }
 
 details[open] {
@@ -273,4 +288,36 @@ details[open] {
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
+}
+
+/* footer */
+.energy{
+    display: flex;
+    justify-content: center;
+    flex:1;
+    min-width: 200px;
+}
+
+.energy p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app{
+    flex: 0 0 auto;
+    order:-1;
+}
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--footer-bright);
+    border: none;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
 }
