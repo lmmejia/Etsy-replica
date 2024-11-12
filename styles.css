@@ -22,7 +22,7 @@ nav ul{
     height: 60px;
 }
 
-.categories-button{
+.categories-button svg{
     font-size: 16px;
     font-weight: bold;
     color:#333;
@@ -31,6 +31,8 @@ nav ul{
     padding: 8px 12px;
     cursor: pointer;
     margin-left: 20px;
+    width: 10px;
+    height: 10px;
 }
 
 .search-bar {
@@ -217,10 +219,10 @@ body {
     fill: darkorange
 }
 
-.categories-button {
+.categories-button svg path {
     display: flex;
     padding: 9px 15px; 
-    height: 5px;
+    height: 10px;
 }
 
 
@@ -236,7 +238,7 @@ body {
 
 .coupon-code-container {
     display: flex;
-    align-items: center;
+    align-items:left;
     background-color: white;
     margin: 0px 0px 0px -15px;
     padding: 9px 15px;
@@ -244,11 +246,11 @@ body {
     cursor: pointer;
 }
 
-.couponimg svg{
+.coupon-img {
     display:flex;
-    width: 10px;
+    width: 75px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .footer {
