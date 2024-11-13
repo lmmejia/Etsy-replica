@@ -236,6 +236,7 @@ body {
     background-color: #f9f9f9;
 }
 
+
 .coupon-code-container {
     display: flex;
     align-items:left;
@@ -267,4 +268,14 @@ body {
     color: black;
 }
 
+
+
+.payment-method1 ul img {
+    display:flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    margin-right: 10px;
+    width: 200px; /* Adjust the size as needed */
+    height: auto; /* Keeps the aspect ratio */
+}
 
