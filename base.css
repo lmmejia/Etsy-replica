@@ -14,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Helvetica Neue, Droid Sans, Arial, "sans serif";
+    overflow-x: hidden;
+    margin: 0;
 }
 /* NAV */
 
@@ -23,10 +25,10 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px
     background-color: white;
-    border-bottom: 1px solid #ddd;
     width: 100%;
+    position: relative;
 }
 
 nav ul {
@@ -41,6 +43,11 @@ nav ul a {
     margin-right: 25px;
 }
 
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
 .categories {
     background: none;
     border: none;
@@ -52,19 +59,20 @@ nav ul a {
 .search-container {
     position: relative;
     width: 100%; 
-    max-width: 400px; 
-
+    max-width: 60rem;
 }
 
 .search{
     width: 100%;
-    max-width: 50rem;
-    padding: 8px 15px;
+    padding: 1rem 15px;
     font-size: 16px;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 2rem;
     border-width: 2px;
+    box-sizing: border-box;
 }
+
+
 
 .search-button {
     background-color: var(--etsy-orange);
@@ -74,16 +82,21 @@ nav ul a {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 10px;
-    top: 5px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigate-user {
     display: flex;
     align-items: center;
     gap: 15px;
-    
+    padding: 0;
+    margin:0;
 }
 
 .navigate-user img{
@@ -92,34 +105,40 @@ nav ul a {
 }
 
 .navigate-user a {
-    color: #333;
+    color: black;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
 }
 
+.mid-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20%;
+}
 .navigate-links {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
     background-color: white;
-    border-top: 1px solid #ddd;
-    gap: 20px;
-    border-radius: 50;
 }
 
 .navigate-links a {
-    color: #333;
+    color: black;
     text-decoration: none;
-    font-size: 16px;
     display: flex;
     align-items: center;
+    border-radius: 5rem;
+    border-width: 2px;
+    padding: 0.5rem;
+    font-size: 14px;
+    width:max-content;
 }
 
 .navigate-links button :hover {
     background-color: lightgray;
-    border-radius: 12px;
+    
 }
 
 .navigate-links button{
@@ -130,14 +149,18 @@ nav ul a {
     color: #333;
 }
 
-ul.navigate{
+/* small nav */
+ul.navigate{ 
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 16px;
+    gap: 10px;
 }
 
-
+main{
+    border-top: 1px solid #ddd;
+    border-width: 2px;
+}
 aside.App{
     background-color: var(--footer-app);
 }
