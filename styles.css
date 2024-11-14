@@ -271,7 +271,7 @@ body {
 
 
 .payment-method1 ul img {
-    display:flex;
+    display:inline-block;
     flex-shrink: 0;
     justify-content: flex-start;
     margin-right: 10px;
