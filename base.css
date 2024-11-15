@@ -1,3 +1,65 @@
+/* SVG stylings */
+.Etsy-logo {
+    height: 40px;
+    fill: var(--etsy-orange);
+    
+}
+.Arrow {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.Download {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.Paperclip {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.Present {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-right: 0.5rem;
+}
+.Present-nav {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.Cart{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.next{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.heart{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: black;
+    position: absolute;
+    top: 0;
+    right:;
+    z-index: 10;
+}
+
+.energy-hand{
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: white;
+}
+
+.etsy-app{
+    fill: white;
+    width: 5rem;
+    height: 5rem;
+}
+
+ /* colord and body */
 body {
     /** define custom properties so we can reference and change styles easily */
     --etsy-orange:#f1641e;
@@ -115,12 +177,24 @@ nav ul a {
     font-size: 14px;
     display: flex;
     align-items: center;
+    border-radius: 5rem;
+    border-width: 2px;
+    padding: 0.5rem;
 }
 .navigate-user button{
     border-radius: 20px;
     border: none;
     background-color: white;
 }
+
+#sign-in :hover {
+    background-color: var(--nav-hover);
+}
+
+.navigate-user button :hover {
+    background-color:#ccebff;
+}
+
 
 .mid-nav{
     display: flex;
@@ -170,38 +244,39 @@ nav ul a {
 .navigate{ 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     margin: 0;
-    padding: 0 35rem;
+    padding: 0 33rem;
     font-size: 14px;
-    max-width: 10rem;
     
 }
 .navigate p{
     color: black;
-    padding-right: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-size: 14px;
 }
 
+.navigate a{
+    display: flex;
+    margin: 0;
+}
 
 main{
-    
     display: flex;
 }
 
 .main-content {
     padding: 0 3rem;
 }
-aside.App{
-    background-color: var(--footer-app);
-}
+
 
 /* Footer */
 
 .footer{
     background-color: var(--footer-bright);
-    display: flex;
-    justify-content: flex-start;
     padding: 20px;
     gap: 20px;
 }
@@ -213,11 +288,6 @@ aside.App{
     color: white;
 }
 
-footer div {
-    flex: 1;
-    min-width: 150px; 
-}
-
 footer p{
     color: white;
 }
@@ -226,6 +296,10 @@ footer ul a{
     color: white;
     text-decoration: none;
 }
+
 footer ul {
-    color: var(--footer-bright)
+    color: var(--footer-bright);
+    padding-left: 0;
 }
+
+
