@@ -8,6 +8,7 @@ body {
     --footer-light: #3b67d9 ;
     --footer-app: #122868;
     --footer-bright:#2638c0; 
+    --nav-hover: #0e0e0e17;
 
     color: var(--black);
     line-height: 1.5rem;
@@ -25,10 +26,10 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px
     background-color: white;
     width: 100%;
     position: relative;
+    max-height:fit-content;
 }
 
 nav ul {
@@ -38,8 +39,7 @@ nav ul {
 
 nav ul a {
     /* color should be accent-background-text */
-    color:white
-    text-decoration: none;
+    color:black;
     margin-right: 25px;
 }
 
@@ -54,12 +54,13 @@ nav ul a {
     font-size: 16px;
     cursor: pointer;
     color: #333;
+    margin-right: 0;
 }
 
 .search-container {
     position: relative;
     width: 100%; 
-    max-width: 60rem;
+    max-width: 55rem;
 }
 
 .search{
@@ -79,8 +80,8 @@ nav ul a {
     fill:white;
     border: none;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     right: 5px;
     top: 50%;
@@ -91,6 +92,10 @@ nav ul a {
     justify-content: center;
 }
 
+.gift{
+    display: flex;
+    align-self: center
+}
 .navigate-user {
     display: flex;
     align-items: center;
@@ -111,17 +116,25 @@ nav ul a {
     display: flex;
     align-items: center;
 }
+.navigate-user button{
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
 
 .mid-nav{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 20%;
+    margin: 0 20rem;
+    max-height:min-content;
+    border-bottom: 1px solid #ddd;
+    border-width: 2px;
 }
 .navigate-links {
     display: flex;
-    justify-content: center;
     background-color: white;
+    padding:0;
+    margin: 0;
 }
 
 .navigate-links a {
@@ -136,9 +149,13 @@ nav ul a {
     width:max-content;
 }
 
+.navigate-links li{
+    display: flex;
+    align-items: center;
+}
+
 .navigate-links button :hover {
-    background-color: lightgray;
-    
+    background-color: var(--nav-hover)
 }
 
 .navigate-links button{
@@ -150,16 +167,30 @@ nav ul a {
 }
 
 /* small nav */
-ul.navigate{ 
+.navigate{ 
     display: flex;
     flex-direction: row;
-    list-style: none;
-    gap: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 0 35rem;
+    font-size: 14px;
+    max-width: 10rem;
+    
+}
+.navigate p{
+    color: black;
+    padding-right: 15px;
+    font-size: 14px;
 }
 
+
 main{
-    border-top: 1px solid #ddd;
-    border-width: 2px;
+    
+    display: flex;
+}
+
+.main-content {
+    padding: 0 3rem;
 }
 aside.App{
     background-color: var(--footer-app);
