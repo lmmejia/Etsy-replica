@@ -47,6 +47,30 @@
     z-index: 10;
 }
 
+.sparkle{
+    height: 1rem;
+    width: 1rem;
+    fill: black;
+}
+
+.star {
+    height: 18px;
+    width: 18px;
+    fill: #9560b8;
+}
+
+.stars {
+    height: 0.9rem;
+    width: 0.9rem;
+    fill: black;
+}
+
+.paypal{
+    height: 5rem;
+    width: 6rem;
+    fill: black;
+    padding:0;
+}
 .energy-hand{
     height: 2.5rem;
     width: 2.5rem;
@@ -57,9 +81,25 @@
     fill: white;
     width: 5rem;
     height: 5rem;
+    background-color: var(--etsy-orange);
+    border-radius: 20px;
+    padding: 0 2px;
 }
 
- /* colord and body */
+#apps{
+    margin-left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: white;
+}
+.apps{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: white;
+    margin-left: 1rem;
+}
+
+ /* colors and body */
 body {
     /** define custom properties so we can reference and change styles easily */
     --etsy-orange:#f1641e;
@@ -277,8 +317,8 @@ main{
 
 .footer{
     background-color: var(--footer-bright);
-    padding: 20px;
-    gap: 20px;
+    padding: 2rem 3rem;
+    gap: 7rem;
 }
 
 .section-title {
@@ -300,6 +340,11 @@ footer ul a{
 footer ul {
     color: var(--footer-bright);
     padding-left: 0;
+    font-size: 14px;
+}
+
+footer li{
+    padding: 2.5px;
 }
 
 
