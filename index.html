@@ -74,52 +74,45 @@
         <div>
         <section class="checkout">
             <h2>How you'll pay</h2>
-            <div class="payment-methods">
-                <ul>
-                    <li> <img src="images/visa.png" alt="Visa"/> </li>
-                    <li> <img src="images/mastercard.png" alt="MasterCard"/> </li>
-                    <li> <img src="images/discover.png" alt="Discover"/> </li>
-                    <li> <img src="images/paypal.png" alt="PayPal"/> </li>
-                    <li> <img src="images/googlepay.png" alt="Google Pay"/> </li>
-                    <li> <img src="images/klarna.png" alt="Klarna"/> </li>
-                </ul>
-            </div>
-
                 <div class="checkout-container">
-                    <h2>Checkout</h2>
                     <div class="payment-method1">
-                        <label>
+                        <label class="payment-option">
                             <input type="radio" name="payment" id="visa" checked>
-                            <span class="card-icon-visa"></span> Visa
-                            <img src="images/fourpayments.png" alt="fourpayments"/> 
-
-                            <ul>
-                                <li> <img src="images/fourpayments.png" alt="fourpayments"/> </li>
-                                <li> <img src="images/klarna.png" alt="Klarna"/> </li>
-                            </ul>
+                            <div class="icongroup">
+                                <label class="fourimg">
+                                    <img src="images/fourpayments.png" alt="fourpayments"/> 
+                                </label>
+                            </div>
                         </label>
                     </div>
-                    <div class="payment-method">
-                        <label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" id="klarna">
+                            <img src="images/klarna.png" alt="Klarna"/>
+                        </label>
+                        <label class="payment-option">
                             <input type="radio" name="payment" id="paypal">
-                            <span class="card-icon paypal"></span> Pay now or pay later
-                            <img src="images/paypal.png" alt="PayPal"/> 
+                            <label class="paypal">
+                                <img src="images/paypal.png" alt="PayPal"/> 
+                            </label>
                         </label>
-                    </div>
-                    <div class="payment-method">
-                        <label>
+                        <label class="payment-option">
                             <input type="radio" name="payment" id="googlepay">
-                            <span class="card-icon googlepay"></span> 
-                            <img src="images/googlepay.png" alt="Google Pay"/>
+                            <label class="googlepay">
+                                <img src="images/googlepay.png" alt="Google Pay"/>
+                            </label>
                         </label>
-                    </div>
-                    <button type="submit">Place Order</button>
                 </div>
 
             <div class="checkout-summary">
-                <p>Item(s) total: $4.00</p>
+                <p>Item(s) total $4.00</p>
+                <p>Shop Discount -$4.00</p>
+                <div class="separator"></div>
+                    <div class="total">
+                    <span class="label">Subtotal:</span>
+                    <span class="value">$4.00</span>
+                    </div>
                 <button class="checkout-btn">Proceed to checkout</button>
-            </div>
+                </div>
 
             <div class="coupon-code-container">
                 <button class="coupon-img">  

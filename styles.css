@@ -271,7 +271,8 @@ body {
 
 
 .payment-method1 ul img {
-    display:inline-block;
+    display:flex;
+    position: relative;
     flex-shrink: 0;
     justify-content: flex-start;
     margin-right: 10px;
@@ -279,3 +280,84 @@ body {
     height: auto; /* Keeps the aspect ratio */
 }
 
+
+
+.radio img{
+    padding-top: 5px;
+    width: 8%;
+    vertical-align: middle;
+}
+
+.payment-option{
+    display: flex;
+    align-items: center;
+    margin: 12px 0px 0px;
+    margin-bottom: 0px 0px 0px 6px;
+    gap: 10px;
+}
+
+.payment-option img {
+    width: 60px;
+    height: auto;
+    display: inline-block;
+    border-radius: 2px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #ddd;
+}  
+
+.fourimg img{
+    width: 200px;
+    height: 45px;
+}
+
+.paypal img{
+    width: 70px;
+    height: 30px;
+}
+
+.googlepay img{
+    width: 50px;
+    height: 35px;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 550;  
+    color: #222222;
+    padding: 0px 2px 0px 0px;    
+}
+
+.payment-option input[type="radio"] {
+    appearance: none; /* Remove default styling */
+    width: 30px;
+    height: 30px;
+    border: 1px solid dimgray; /* Light gray border */
+    background-color: #ffffff;
+    border-radius: 50%; /* Circular radio button */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 12px;
+}
+
+input[type="radio"]:checked {
+    border-color: black; 
+    background-color: black; 
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff; 
+}
+
+.separator {
+    border-bottom: 2px solid #ddd; /* Light gray line */
+    margin: 10px 0; /* Adds spacing above and below the line */
+  }
