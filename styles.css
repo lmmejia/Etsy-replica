@@ -177,6 +177,12 @@ body {
 
 .checkout-summary {
     margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Adds space between each item */
+    width: 300px; /* Optional: sets a fixed width */
 }
 
 .checkout-summary p {
@@ -329,12 +335,12 @@ h2{
 }
 
 .payment-option input[type="radio"] {
-    appearance: none; /* Remove default styling */
+    appearance: none; 
     width: 30px;
     height: 30px;
-    border: 1px solid dimgray; /* Light gray border */
+    border: 1px solid dimgray; 
     background-color: #ffffff;
-    border-radius: 50%; /* Circular radio button */
+    border-radius: 50%;
     outline: none;
     cursor: pointer;
     position: relative;
@@ -360,4 +366,4 @@ input[type="radio"]:checked::before {
 .separator {
     border-bottom: 2px solid #ddd; /* Light gray line */
     margin: 10px 0; /* Adds spacing above and below the line */
-  }
+}
