@@ -92,13 +92,13 @@ nav ul a {
 
 .search-container {
     position: relative;
-    width: 100%; 
+    width: 400%; 
     max-width: 400px; 
 
 }
 
 .search{
-    width: 100%;
+    width: 600%; /*makes search bar bigger*/
     max-width: 50rem;
     padding: 8px 15px;
     font-size: 16px;
@@ -115,7 +115,7 @@ nav ul a {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 10px;
+    right: -600px;
     top: 5px;
     cursor: pointer;
 }
@@ -124,7 +124,7 @@ nav ul a {
     display: flex;
     align-items: center;
     gap: 15px;
-    padding-left: 500px; /*might need to fix this */
+    padding-left: 700px; /*might need to fix this */
 }
 
 .navigate-user img{
