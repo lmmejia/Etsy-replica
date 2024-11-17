@@ -48,11 +48,23 @@ nav ul {
     color:white;
 
     display: flex; /* Align list items horizontally */
+    /* align-items: center; */
     list-style: none;
     margin: 0 auto;
     padding: 0;
     gap: 40px; /* Space between items */
 }
+
+.cart-header svg {
+    margin-right: 10px;
+}
+
+.cart-header h2 {
+    display: flex;            /* Enables flexbox layout */
+    align-items: center;      /* Vertically aligns the SVG and H2 */
+    gap: 100px;                /* Adds spacing between the SVG and H2 */
+}
+
 
 nav ul a {
     /* color should be accent-background-text */
@@ -296,6 +308,7 @@ body {
     top: 18;
     left: 0;
     box-shadow: none;
+
 }
 
 .cart-header h1 {
@@ -303,18 +316,31 @@ body {
     /* font-family: Graphic Webfont; */
 }
 
+
+.purchase-protection {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0;
+    white-space: nowrap;
+}
+
 .cart-item {
     width: auto;
     float: left;
     margin-right: 20px;
+    margin-left: -70px; 
     justify-content: space-between; 
     padding: 20px;
     display:flex;
     flex:wrap;
     border: 1px solid lightgray;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 50px; /*moves cart item box up and down on page*/
+    border-radius: 12px;
+    margin-top: 110px; /*moves cart item box up and down on page*/
     /* flex-direction: row; */
 }
 
@@ -323,7 +349,7 @@ body {
 .item-image img {
     width: 120px;
     height: auto;
-    border-radius: 4px;
+    border-radius: 6px;
     display: block;
     margin-right: 100px;
     /* overflow: hidden; */
@@ -338,6 +364,30 @@ body {
     text-align: left;
     word-wrap: break-word;
     max-width: 100%; 
+}
+
+.seller{
+    max-height: 32px;
+    padding: 24px 24px 24px 6px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    top:auto;
+    left:0;
+    margin: 10px;
+}
+
+.seller img{
+    width:32px;
+    height: 32px;
+    border-radius: 5px;
+    
+}
+
+.seller svg{
+    width: 18px;
+    height: 18px;
 }
 
 .item-details h2 {
@@ -368,6 +418,28 @@ body {
 .discount-timer {
     font-size: 0.9em;
     color: #888;
+    border-radius: 12px;
+}
+
+.download-buttons{
+    padding: 3px 6px;
+    border:none;
+    border-radius: 5px;
+    font-size: 8px;
+}
+
+.button1, .button2{
+    border:none;
+    border-radius: 15px;
+    background-color: #EAEAEA;
+}
+
+.cart-button1, .cart-button2{
+    border:none;
+    border-radius: 20px;
+    background-color: white;
+    margin:0 0 0 -15px;
+    padding: 9px 15px;
 }
 
 .checkout {
@@ -377,7 +449,7 @@ body {
     flex-direction: column;
     padding: 10px;
     padding-left: 100px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .payment-methods img {
@@ -463,6 +535,8 @@ body {
 .coupon-code-container {
     margin-top: 20px;
     text-align: left;
+    padding: 9px 15px;
+    margin: 0 0 0 -15px;
 }
 
 .coupon-img {
@@ -474,12 +548,12 @@ body {
     color: #222; /* Dark text for readability */
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #ccc; /* Subtle border */
     border-radius: 24px;
-    padding: 10px 15px;
+    border:none;
+    padding: 9px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.2s ease;
-    width: 200%; /* Ensure it spans the container width */
+    width: 100%; /* Ensure it spans the container width */
 }
 
 .coupon-img svg{
