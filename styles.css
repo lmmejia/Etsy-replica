@@ -663,38 +663,6 @@ input[type="radio"]:checked::before {
 }
 
 
-/* footer */
-.energy{
-    display: flex;
-    justify-content: center;
-    flex:1;
-    min-width: 200px;
-}
-
-.energy p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.app{
-    flex: 0 0 auto;
-    order:-1;
-}
-.download-app {
-    color: white;
-    text-decoration: none;
-}
-
-.download-app{
-    background-color: var(--footer-bright);
-    border: none;
-    color: white;
-    padding: 1rem 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
 /* Footer */
 
 .footer{
@@ -729,3 +697,34 @@ footer ul {
     color: var(--footer-bright)
 }
 
+/* footer */
+.energy{
+    display: flex;
+    justify-content: center;
+    flex:1;
+    min-width: 200px;
+}
+
+.energy p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app{
+    flex: 0 0 auto;
+    order:-1;
+}
+.download-app {
+    color: white;
+    text-decoration: none;
+}
+
+.download-app{
+    background-color: var(--footer-bright);
+    border: none;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
