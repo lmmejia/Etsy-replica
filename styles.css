@@ -283,6 +283,7 @@ body {
 
 
 .item-image img {
+    object-fit: cover; /*work on this from */
     width: 150px;
     height: auto;
     border-radius: 6px;
