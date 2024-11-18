@@ -56,7 +56,7 @@ aside{
 /* Main Carousel Container */
 .carousel {
     background-color: white;
-    max-width: 70%;
+    max-width: 75%;
     display: flex;
     width: 50rem;
     height: 50rem;
@@ -118,9 +118,9 @@ aside{
 
 
 .carousel-main {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     width: 500px;
     height: 500px;
     margin-left: 20px;
@@ -128,9 +128,12 @@ aside{
 }
 
 .carousel-main img {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
     border-radius: 4px;
+
 }
 
 /* Active Item Highlight */
@@ -149,12 +152,14 @@ aside{
 /* product description aside */
 
 .product {
-    max-width: 100%;
-    margin: 20px 0 20px 4rem;
-    padding: 20 0 20px 20px;
+    max-width: 30%;
+    margin: 20px 0 20px 8rem;
+    /* padding: 20 0 20px 20px; */
     background-color: #fff;
     border-radius: 8px;
     font-size: 16px;
+    
+
 }
 
 /* Product Title and Price */
@@ -284,7 +289,7 @@ h2 {
     font-weight: bold;
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .add-to-cart a {
@@ -292,12 +297,18 @@ h2 {
     text-decoration: none;
 }
 
-/* Star Seller Info Section */
+.star-seller-info{
+    display: flex;
+    align-items: center;
+}
+
+
 .star-seller-info p {
     font-size: 14px;
     color: #555;
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 
 .seller-info a:hover {
@@ -311,26 +322,54 @@ h2 {
 
 /* drop down */
 details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative; 
 }
 
 summary {
+    display: block;
     font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
 }
 
-details[open] {
-    padding: 0.5em;
+summary::after {
+    /* margin-left: 17rem; */
+    display: inline-block;
+    content: 'v';
+    transition: 0.2s;
+    position: absolute; 
+    right: 1rem;
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
 }
 
+details[open] > summary::after {
+    transform: rotate(180deg);
+    margin-right: 0;
+}
+
+
+.drop{
+    display: flex;
+    align-items:  center;
+    color: white;
+}
+
+.drop h4{
+    color: black;
+    font-size: 16px;
+}
+
+.drop h5{
+    color: black;
+    font-size: 16px;
+}
+.drop p{
+    color: black;
+    padding-left: 0.5rem;
+}
 /* footer */
 
 .footer-main{
@@ -373,6 +412,7 @@ details[open] summary {
     cursor: pointer;
     text-decoration: none;
     margin-top: 1rem;
+    min-width:max-content;
 }
 
 section.Energy{

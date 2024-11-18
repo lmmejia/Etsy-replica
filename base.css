@@ -64,13 +64,11 @@
     width: 0.9rem;
     fill: black;
 }
-
-.paypal{
-    height: 5rem;
-    width: 6rem;
-    fill: black;
-    padding:0;
+.star-badge{
+    height: 2rem;
+    width: 3.5rem;
 }
+
 .energy-hand{
     height: 2.5rem;
     width: 2.5rem;
