@@ -383,6 +383,7 @@ body {
     border-radius: 15px;
     background-color: #EAEAEA;
     font-weight: 400;
+    margin: 4px;
 }
 
 .button1 svg{
@@ -419,7 +420,9 @@ body {
     margin-top: 20px;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    display: flex;
+    display: table-cell; /*addedthesetwo in class, might have to change*/
+    vertical-align: inherit; /*addedthesetwo in class, might have to change, might have to change ln425 back*/
+    /* display: flex; */ 
     flex-direction: column; /* Stack items vertically */
     gap: 15px; /* Adds space between each item */
     width: 300px; /* Optional: sets a fixed width */
@@ -429,6 +432,7 @@ body {
 
 .checkout-summary p {
     font-size: 1.2em;
+    font-weight: 500;
 }
 .checkout-summary p1{
     text-align: right;
