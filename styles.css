@@ -448,7 +448,6 @@ body {
     text-align: right;
     /* margin:0 0 0 40px; */
     padding-left: 150px;
-    font-size: ;
 }
 
 .checkout-summary p2{
@@ -461,8 +460,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     padding: 6px 0px 0px;
-    display: inline-block ;
-    text-align: ;
+    display: inline-block;
 }
 
 .value{
