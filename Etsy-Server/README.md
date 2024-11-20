@@ -1,3 +1,4 @@
+
 # CSEN 60 Project: Website Replica
 10/21/2024
 
@@ -15,3 +16,12 @@
   - Add-to-cart( product page)
   - Remove from cart ( Cart checkout page)
   - image carousal 
+
+```
+npm install
+npm run dev
+```
+
+```
+open http://localhost:3000
+```
