@@ -55,26 +55,57 @@ aside{
 /* main */
 /* Main Carousel Container */
 .carousel {
-    background-color: white;
-    max-width: 75%;
     display: flex;
-    width: 50rem;
-    height: 50rem;
+    gap: 20px;
+    width: 100%;
+    max-height: 40rem;
+    margin: 3rem 0;
+    justify-content: center; 
+    overflow: hidden;
+    position: relative;
 }
 
+.carousel-main {
+    flex: 1;
+    display: flex;
+    max-width: 100%;
+}
+
+.main-img {
+    width: 100%; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+/* Buttons */
 .carousel button{
     display: flex;
     align-items: center;
     justify-content: center;
     background: none;
     border: none;
+    border-radius: 50%;
     font-size: 16px;
     cursor: pointer;
-    /* padding: 2rem 2rem; */
+    padding: 1.5rem 1.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     color:black;
+}
+
+.button-prev {
+    position: relative;
+    z-index: 1;
+    top: 17rem;
+}
+
+.button-next {
+    position: relative;
+    z-index: 1;
+    top: 17rem;
 }
 
 #etsys-pick {
@@ -96,47 +127,36 @@ aside{
 .carousel-track {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-y: scroll; 
+    gap: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 600px;
+    min-width: 100px;
+    transition: transform 1s ease-in-out;
+}
+
+.img{
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.337) 0%,rgba(255, 255, 255, 0.778) 100%);
+}
+
+.img:after{
+transition: .5s;
 }
 
 /* Thumbnail Items in Track */
-.carousel-track img, .carousel-track video {
-    width: 100px;
-    height: auto;
-    margin-bottom: 8px;
-    border-radius: 4px; /* Rounded corners on thumbnails */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.carousel-track img:hover, .carousel-track video:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
-}
-
-
-.carousel-main {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 500px;
-    height: 500px;
-    margin-left: 20px;
+.carousel-track img {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    padding: auto;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.carousel-main img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-
+.carousel-track img:hover, .carousel-track img.active {
+    mask-image: none;
 }
 
-/* Active Item Highlight */
 .carousel-track img.active {
     border: 2px solid #333;
 }
@@ -145,21 +165,30 @@ aside{
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
-    /* position: relative; */
 }
 
 
-/* product description aside */
+.report{
+    display: block;
+    color: black;
+    font-size: 14px;
+    position: absolute;
+    top: 55rem; 
+    right: 40%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
 
+/* product description aside */
 .product {
     max-width: 30%;
-    margin: 20px 0 20px 8rem;
+    margin: 20px 0 20px 4rem;
     /* padding: 20 0 20px 20px; */
     background-color: #fff;
     border-radius: 8px;
     font-size: 16px;
-    
-
 }
 
 /* Product Title and Price */
@@ -370,6 +399,9 @@ details[open] > summary::after {
     color: black;
     padding-left: 0.5rem;
 }
+
+
+
 /* footer */
 
 .footer-main{

@@ -42,8 +42,6 @@
     width: 1.5rem;
     fill: black;
     position: absolute;
-    top: 0;
-    right:;
     z-index: 10;
 }
 
@@ -97,6 +95,26 @@
     margin-left: 1rem;
 }
 
+.flag{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.prev{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: black;
+    z-index: 3;
+    position: absolute;
+}
+
+.next{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: black;
+    z-index: 3;
+    position:absolute;
+}
  /* colors and body */
 body {
     /** define custom properties so we can reference and change styles easily */
