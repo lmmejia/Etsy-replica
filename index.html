@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <nav>
+        <header>
+        <div class="header">
+        <ul class="navigation">
+            <li> <a href="home.html"> <svg class="Etsy-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" aria-hidden="true" focusable="false" alt="Etsy logo"> <path d="M6.547,3.125v6.008c0,0,2.117,0,3.25-0.086c0.891-0.156,1.055-0.242,1.219-1.133l0.328-1.305h0.969l-0.164,2.852 l0.086,2.922h-0.977l-0.242-1.141c-0.242-0.812-0.57-0.977-1.219-1.055c-0.812-0.086-3.25-0.086-3.25-0.086v5.039 c0,0.969,0.492,1.383,1.625,1.383h3.414c1.055,0,2.109-0.086,2.766-1.625l0.883-1.953h0.82c-0.086,0.406-0.492,3.984-0.57,4.789 c0,0-3.086-0.078-4.383-0.078H5.25l-3.492,0.078v-0.883l1.133-0.25c0.82-0.164,1.062-0.406,1.062-1.055 c0,0,0.086-2.195,0.086-5.852c0-3.648-0.086-5.844-0.086-5.844c0-0.727-0.242-0.891-1.062-1.055L1.758,2.555V1.664l3.414,0.07h6.5 c1.297,0,3.484-0.234,3.484-0.234s-0.078,1.375-0.164,4.625h-0.891l-0.328-1.141c-0.32-1.461-0.805-2.188-1.703-2.188H6.961 C6.547,2.797,6.547,2.875,6.547,3.125z M19.703,3.766h0.977V7.18l3.336-0.164l-0.164,1.547l-3.25-0.25v6.016 c0,1.703,0.57,2.359,1.547,2.359c0.883,0,1.539-0.492,1.781-0.898l0.484,0.57c-0.484,1.133-1.859,1.703-3.164,1.703 c-1.617,0-2.93-0.969-2.93-2.836V8.398h-1.938V7.586C18.008,7.422,19.219,6.445,19.703,3.766z M26.695,14.242l0.648,1.547 c0.242,0.648,0.812,1.305,2.109,1.305c1.383,0,1.953-0.734,1.953-1.625c0-2.766-5.445-1.953-5.445-5.688c0-2.109,1.703-3.094,3.898-3.094c0.977,0,2.438,0.164,3.172,0.492c-0.164,0.812-0.25,1.867-0.25,2.68l-0.805,0.078l-0.57-1.625 c-0.164-0.398-0.82-0.727-1.625-0.727c-0.977,0-1.953,0.406-1.953,1.461c0,2.516,5.609,1.953,5.609,5.688c0,2.117-1.867,3.25-4.148,3.25c-1.703,0-3.414-0.656-3.414-0.656c0.164-0.969,0.086-2.023,0-3.086H26.695z M33.031,22.039 c0.242-0.891,0.406-2.023,0.57-3.086l0.891-0.078l0.328,1.703c0.078,0.406,0.32,0.734,0.969,0.734c1.055,0,2.438-0.648,3.742-2.922 c-0.578-1.383-2.281-5.844-3.828-9.258c-0.406-0.898-0.484-0.977-1.047-1.141l-0.414-0.156v-0.82l2.445,0.086l3-0.164V7.75 l-0.734,0.164c-0.57,0.078-0.805,0.398-0.805,0.727c0,0.086,0,0.164,0.078,0.328c0.156,0.492,1.461,4.141,2.438,6.578c0.805-1.703,2.352-5.523,2.594-6.172c0.086-0.328,0.164-0.406,0.164-0.648c0-0.414-0.242-0.656-0.805-0.812L42.039,7.75V6.938 l2.281,0.078l2.109-0.078V7.75l-0.406,0.32c-0.812,0.328-0.898,0.406-1.219,1.062l-3.57,8.359 c-2.117,4.797-4.312,5.203-5.852,5.203C34.406,22.695,33.672,22.445,33.031,22.039z"> </path> </svg> </a> </li>
+            <li> <button class="categories" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 18 18">
+                        <rect x="2" y="8" width="14" height="2"></rect>
+                        <rect x="2" y="13" width="14" height="2"></rect>
+                        <rect x="2" y="3" width="14" height="2"></rect>
+                </svg>
+                Categories
+                </button>
+        </ul>
+        <div class="search-container">
+            <input class="search" type="text" placeholder="Search for anything"/>
+            <button type="submit" class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 19a8.46 8.46 0 0 0 5.262-1.824l4.865 4.864 1.414-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19m0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13" ></path> </svg>
+            </button>
+        </div>
+        <ul class="navigate-user">
+            <li> <a href ="#">Sign In</a></li>
+            <li> <a href ="#"> <img src ="Assets/Present.png" alt="Present"/> </a> </li>
+            <li> <a href ="#"> <img src ="Assets/Cart.png" alt="Cart"/> </a> </li> 
+        </ul>
+        </div>
+        </header>
+    </nav>
+    <div class="cart-container">
+        <header class="cart-header">
+            <h1>Your cart</h1>
+            <div class="purchase-protection">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="48" height="48" aria-hidden="true" focusable="false">
+                <style>
+                    
+                        .is-in-view #e0NMFoeIPOT2_to {animation: e0NMFoeIPOT2_to__to 2000ms linear 1 normal forwards} @keyframes e0NMFoeIPOT2_to__to {0% {transform: translate(44.162561px,5.846695px)} 8% {transform: translate(44.162561px,5.846695px); animation-timing-function: cubic-bezier(0.15,0,1,1)} 16.5% {transform: translate(42.257336px,6.69656px); animation-timing-function: cubic-bezier(0.25,0,0.75,1)} 28% {transform: translate(46.27px,7.700005px)} 36.5% {transform: translate(42.752561px,5.5px)} 48% {transform: translate(44.150002px,6.297191px)} 100% {transform: translate(44.150002px,6.297191px)}}
+                        .is-in-view #e0NMFoeIPOT2_tr {animation: e0NMFoeIPOT2_tr__tr 2000ms linear 1 normal forwards} @keyframes e0NMFoeIPOT2_tr__tr {0% {transform: rotate(-5deg)} 8% {transform: rotate(-5deg); animation-timing-function: cubic-bezier(0.15,0,1,1)} 16.5% {transform: rotate(-7deg); animation-timing-function: cubic-bezier(0.25,0,0.75,1)} 28% {transform: rotate(7deg)} 36.5% {transform: rotate(-5deg)} 48% {transform: rotate(0deg)} 100% {transform: rotate(0deg)}}
+                        .is-in-view #e0NMFoeIPOT5_to {animation: e0NMFoeIPOT5_to__to 2000ms linear 1 normal forwards} @keyframes e0NMFoeIPOT5_to__to {0% {transform: translate(4.2px,5.697011px)} 8% {transform: translate(4.2px,5.697011px); animation-timing-function: cubic-bezier(0.15,0,1,1)} 16.5% {transform: translate(5.826704px,6.546839px); animation-timing-function: cubic-bezier(0.25,0,0.75,1)} 28% {transform: translate(1.52px,7.701463px)} 36.5% {transform: translate(5.294274px,5.6px)} 48% {transform: translate(3.85px,6.297191px)} 100% {transform: translate(3.85px,6.297191px)}}
+                        .is-in-view #e0NMFoeIPOT5_tr {animation: e0NMFoeIPOT5_tr__tr 2000ms linear 1 normal forwards} @keyframes e0NMFoeIPOT5_tr__tr {0% {transform: rotate(5deg)} 8% {transform: rotate(5deg); animation-timing-function: cubic-bezier(0.15,0,1,1)} 16.5% {transform: rotate(7deg); animation-timing-function: cubic-bezier(0.25,0,0.75,1)} 28% {transform: rotate(-7deg)} 36.5% {transform: rotate(5deg)} 48% {transform: rotate(0deg)} 100% {transform: rotate(0deg)}}
+                        .is-in-view #e0NMFoeIPOT8_to {animation: e0NMFoeIPOT8_to__to 2000ms linear 1 normal forwards} @keyframes e0NMFoeIPOT8_to__to {0% {transform: translate(28.52px,15.1px)} 8% {transform: translate(28.52px,15.1px); animation-timing-function: cubic-bezier(0.15,0,1,1)} 16.5% {transform: translate(26.96px,16.52px); animation-timing-function: cubic-bezier(0.284467,0,0.625227,0.383992)} 18.5% {transform: translate(27.14px,16.214055px); animation-timing-function: cubic-bezier(0.310382,0.25506,0.719913,0.848254)} 19.5% {transform: translate(27.3px,15.96px)} 20.5% {transform: translate(27.47px,15.63px)} 22.5% {transform: translate(27.96px,14.98px)} 24.5% {transform: translate(28.46px,14.3px)} 27% {transform: translate(29.004407px,13.613261px); animation-timing-function: cubic-bezier(0.36087,0.641427,0.696459,1)} 28% {transform: translate(29.07px,13.52px)} 28.5% {transform: translate(28.952353px,13.590588px)} 30% {transform: translate(28.55px,13.84px)} 31% {transform: translate(28.3px,14px)} 32% {transform: translate(28.13px,14.18px)} 33% {transform: translate(27.85px,14.3px)} 33.5% {transform: translate(27.776555px,14.35px)} 34% {transform: translate(27.6px,14.4px)} 34.5% {transform: translate(27.540925px,14.5px)} 35.5% {transform: translate(27.305294px,14.6px)} 36.5% {transform: translate(27.07px,14.72px)} 48% {transform: translate(27.765359px,14.148534px)} 100% {transform: translate(27.765359px,14.148534px)}}
+                        .is-in-view #e0NMFoeIPOT8_tr {animation: e0NMFoeIPOT8_tr__tr 2000ms linear 1 normal forwards} @keyframes e0NMFoeIPOT8_tr__tr {0% {transform: rotate(-5deg)} 8% {transform: rotate(-5deg); animation-timing-function: cubic-bezier(0.15,0,1,1)} 16.5% {transform: rotate(-7deg); animation-timing-function: cubic-bezier(0.25,0,0.75,1)} 28% {transform: rotate(7deg)} 36.5% {transform: rotate(-5deg)} 48% {transform: rotate(0deg)} 100% {transform: rotate(0deg)}}
+                    
+                </style>
+                <g id="e0NMFoeIPOT2_to" transform="translate(44.162561,5.846695)">
+                    <g id="e0NMFoeIPOT2_tr" transform="rotate(-5)">
+                        <g transform="translate(-44.150002,-6.29719)">
+                            <path d="M34.7,33.1l4.4-4.4c4.8-4.8,4.8-12.6,0-17.4v0c-4-4-10.1-4.9-14.7-2.1L17.7,15l17,18.1Z" fill="#4d6bc6"></path>
+                            <path d="M36.5,33.5l-2.2-2.2l3.6-3.6c4.2-4.2,4.2-11,0-15.2C34.4,9,29,8.4,25.1,10.8L23.5,8.2C28.6,5,35.6,5.8,40.1,10.3c5.4,5.4,5.4,14.2,0,19.6l-3.6,3.6Z" fill="#222"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="e0NMFoeIPOT5_to" transform="translate(4.2,5.697011)">
+                    <g id="e0NMFoeIPOT5_tr" transform="rotate(5)">
+                        <g transform="translate(-3.85,-6.297191)">
+                            <path d="M40.5,25.2l-4.8-4.8v0l-9-9c-4.8-4.8-12.6-4.8-17.4,0s-4.9,12.6-.1,17.4L15.4,35v0l4.4,4.4c1.2,1.2,3.2,1.2,4.4,0s1.2-3.2,0-4.4l-1.7-1.7l3.9,3.9c1.2,1.2,3.2,1.2,4.4,0s1.2-3.2,0-4.4l1.1,1.1c1.2,1.2,3.2,1.2,4.4,0v0c1.2-1.2,1.2-3.2,0-4.4l-4.9-4.9v0l4.9,4.9c1.2,1.2,3.2,1.2,4.4,0c1-1.2,1-3.1-.2-4.3Z" fill="#d7e6f5"></path>
+                            <path d="M42.7,27.4c0-1.2-.5-2.4-1.4-3.3l-4.8-4.8v0l-9-9c-5.4-5.4-14.2-5.4-19.6,0s-5.4,14.2,0,19.6l6.2,6.2v0l4.4,4.4c.9.9,2.1,1.3,3.3,1.3s2.4-.4,3.3-1.3c.4-.4.7-.9,1-1.5.7.4,1.5.6,2.3.6c1.2,0,2.4-.4,3.3-1.3.6-.6,1-1.3,1.2-2c.3.1.7.1,1,.1c1.2,0,2.4-.5,3.3-1.4.8-.8,1.3-1.9,1.3-3c1.1-.1,2.2-.5,3-1.3.7-.9,1.2-2.1,1.2-3.3Zm-3.6,1.1c-.6.6-1.6.6-2.2,0l-7.6-7.6L27.2,23l7.6,7.6c.6.6.6,1.6,0,2.2s-1.6.6-2.2,0l-1.1-1.1L25,25.2l-2.2,2.2l6.5,6.5c.6.6.6,1.6,0,2.2s-1.6.6-2.2,0L25,33.9l-4.4-4.4-2.2,2.2l4.4,4.4c.6.6.6,1.6,0,2.2s-1.6.6-2.2,0l-1.9-1.9v0L10,27.7c-4.2-4.2-4.2-11,0-15.2s11-4.2,15.2,0l6.2,6.2v0L39,26.3c.3.3.5.7.5,1.1.1.4-.1.8-.4,1.1Z" fill="#222"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="e0NMFoeIPOT8_to" transform="translate(28.52,15.1)">
+                    <g id="e0NMFoeIPOT8_tr" transform="rotate(-5)">
+                        <g transform="translate(-27.765359,-14.148534)">
+                            <path d="M32.3,15.1L23,19.8c-1.7,1.2-4.2.8-5.4-.9v0c-1.2-1.7-.8-4.1.9-5.4c2.1-1.5,4.7-3.4,5.6-3.9C28.7,6.7,35,7.4,39,11.4v0" fill="#4d6bc6"></path>
+                            <path d="M19.4,14.7l1.9-1.4c1-.7,2-1.4,2.7-1.9.4-.3.7-.5.9-.6.7-.4,1.4-.7,2.1-.9c3.7-1.2,8-.3,10.9,2.6l2.2-2.2c-4.2-4.2-10.9-5.2-16-2.5-.3.1-.5.3-.8.4-.4.3-1.3.9-2.3,1.6-.5.3-.9.7-1.4,1l-1.9,1.4c-2.4,1.7-3,5.1-1.3,7.5.8,1.2,2.1,2,3.5,2.2.3.1.6.1.9.1c1.1,0,2.2-.3,3.1-1l5.9-4.1l2.6-1.8-2.2-2.2-2.6,1.8-5.4,3.8c-.5.4-1.1.5-1.7.4s-1.1-.4-1.5-1c-.9-1-.6-2.5.4-3.2Z" fill="#222"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h2> <b>Etsy Purchase Protection: </b> Shop confidently on Etsy knowing if something goes wrong with an order, we've got your back. <u> See program terms</u></h2>
+            </div>
+        </header>
+        <div class="cart-item">
+            <div class="seller">
+                <img src="https://i.etsystatic.com/isla/5fdae1/67502442/isla_75x75.67502442_qprpuqzc.jpg?version=0" alt="Seller-Pic"/>
+                FloralsPrints
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12.001" r="2.999"></circle><circle cx="3" cy="12.001" r="2.999"></circle><circle cx="21" cy="12.001" r="2.999"></circle></svg>
+            </div>
+            <div class="item-image">
+                <img src="https://i.etsystatic.com/39293244/r/il/cb0d09/6146824681/il_1588xN.6146824681_3rpq.jpg" alt="Aesthetic Kitchen Decor Art Print"/>
+            </div>
+            <div class="item-details">
+                <h3>Aesthetic Kitchen Decor Cute Cooking Art Kitche...</h3>
+                <div class="download-buttons" >
+                <button class="button1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17,9c-0.034,0-.066.009-0.1,0.01A5,5,0,0,0,7,10c0,0.017,0,.034.005,0.051A4.433,4.433,0,0,0,6.5,10,4.488,4.488,0,0,0,6,18.95V19H17A5,5,0,0,0,17,9Zm-1.293,5.707-3,3,0,0L12,18.414l-0.706-.706,0,0-3-3a1,1,0,0,1,1.414-1.414L11,14.586V10a1,1,0,1,1,2,0v4.586l1.293-1.293A1,1,0,0,1,15.707,14.707Z"></path></svg>
+                    Instant Download</button>
+                <button class="button2"> 1 PDF included</button>
+                </div>
+                <p class="item-info">In 314 carts, 3 bought in the past 24 hours</p>
+                <button class="cart-button1">Save for later</button>
+                <button class="cart-button2">Remove</button>
+            </div>
+            <div class="item-price">
+                <p class="discount-timer">50% off</p>
+                <p class="price-discount">$4.00</p>
+                <p class="price-original">$8.00</p>
+            </div>
+        </div>
+        
+        <div>
+        <section class="checkout">
+            <h2>How you'll pay</h2>
+                <div class="checkout-container">
+                    <div class="payment-method1">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" id="visa" checked>
+                            <div class="icongroup">
+                                <label class="fourimg">
+                                    <img src="images/fourpayments.png" alt="fourpayments"/> 
+                                </label>
+                            </div>
+                        </label>
+                    </div>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" id="klarna">
+                            <img src="images/klarna.png" alt="Klarna"/>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" id="paypal">
+                            <label class="paypal">
+                                <img src="images/paypal.png" alt="PayPal"/> 
+                            </label>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" id="googlepay">
+                            <label class="googlepay">
+                                <img src="images/googlepay.png" alt="Google Pay"/>
+                            </label>
+                        </label>
+                </div>
+
+            <div class="checkout-summary">
+                <p><p3>Item(s) total</p3> <p1>$4.00</p1> </p>
+                <p><p4>Shop Discount</p4><p2>-$4.00</p2></p>
+                <div class="separator"></div>
+                    <div class="total">
+                    <span class="label">Subtotal:</span>
+                    <span class="value">$4.00</span>
+                    </div>
+                <button class="checkout-btn">Proceed to checkout</button>
+                <div class="coupon-code-container">
+                    <button class="coupon-img"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 12 12 2h10v10L12 22zm17-5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"></path>
+                    </svg> 
+                    Apply Coupon Code
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        </div>
+    </div>
+
+    <footer>
+        <!-- <aside class="App">
+            <ul>
+                <img src="Assets/App.png"/>
+                <button class="download-app"> <a href="#"> Download the Etsy App</a></button>
+            </ul>
+        </aside> -->
+        <main class="footer">
+            <div>
+                <p class="section-title">Shop</p>
+                <ul>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Etsy Registry</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Etsy blog</a></li>
+                    <li><a href="#">Etsy United Kingdom</a></li>
+                    <li><a href="#">Etsy Germany</a></li>
+                    <li><a href="#">Etsy Canada</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="section-title"> Sell</p>
+                <ul>
+                    <li><a href="#">Sell on Etsy</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Affiliates & Creators</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="section-title">About</p>
+                <ul>
+                    <li><a href="#">Etsy, Inc.</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Impact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="section-title">Help</p>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Do not sell or share my personal info</a></li>
+                </ul>
+                <div>
+                    <a href="#"><img src="Assets/IG.png"></a>
+                    <a href="#"><img src="Assets/FB.png"></a>
+                    <a href="#"><img src="Assets/Pinterest.png"></a>
+                    <a href="#"><img src="Assets/X.png"></a>
+                    <a href="#"><img src="Assets/YT.png"></a>
+                </div>
+        </main>
+    </footer>
+
+    <!-- <footer class="footer">
+        <div class="footer-content">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 65 65" version="1.1" aria-hidden="true" focusable="false">
+            <defs>
+                <polygon id="path-1" points="0 0 65 0 65 69 0 69"></polygon>
+            </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="IMPACT_ABOUT-PG_R4" transform="translate(-664.000000, -1098.000000)">
+                    <g id="carbon-neutral" transform="translate(121.000000, 275.000000)">
+                        <g id="Group-3" transform="translate(543.000000, 823.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M64.2380801,0.753616945 C64.2380801,0.753616945 30.9256241,-3.9547134 16.6539847,10.16584 C7.75271703,18.9656695 6.4740571,32.3628885 12.6385439,42.5871987 L45.2062366,19.5780631 L0,64.2916697 L9.51592177,69 L21.943599,51.7908529 C32.280555,57.8881629 45.8253772,56.623437 54.7221583,47.8191699 C68.9982843,33.7030541 64.2380801,0.753616945 64.2380801,0.753616945" id="Fill-1" fill="black" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <p>Etsy offsets carbon emissions from every delivery.</p>
+        </div>
+    </footer> -->
+
+
+</body>
+</html>
