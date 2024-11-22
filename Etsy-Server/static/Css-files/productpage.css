@@ -59,10 +59,11 @@ aside{
     gap: 20px;
     width: auto;
     max-height: 36rem;
-    margin: 3rem 0;
+    margin: 3rem 3rem 3rem 0;
     justify-content: center; 
     overflow: hidden;
     position: relative;
+
 }
 
 .carousel-main {
@@ -98,7 +99,9 @@ aside{
     color:black;
 }
 
-
+.carousel-button:hover{
+    background-color: var(--nav-hover);
+}
 
 .button-prev {
     position: relative;
@@ -106,15 +109,18 @@ aside{
     top: 50%;
 }
 
-.carousel-button:hover{
+.button-prev:hover{
     background-color: var(--nav-hover);
 }
-
 
 .button-next {
     position: relative;
     z-index: 1;
     top: 50%;
+}
+
+.button-next:hover{
+    background-color: var(--nav-hover);
 }
 
 .etsys-pick {
@@ -196,8 +202,7 @@ transition: .5s;
 /* product description aside */
 .product {
     max-width: 30%;
-    margin: 20px 0 20px 4rem;
-    /* padding: 20 0 20px 20px; */
+    /* margin: 20px 0 20px 4rem; */
     background-color: #fff;
     border-radius: 8px;
     font-size: 16px;
@@ -364,16 +369,24 @@ h2 {
 /* drop down */
 details {
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px;
     position: relative; 
-    padding: 0.5rem;
 }
 
 
 summary {
+    position: relative;
     display: block;
     font-weight: bold;
-    padding: 0.5rem;
+    border-radius: 20px;
+    right:1rem;
+}
+summary p{
+    position: relative;
+    padding: 1rem;
+}
+
+summary:hover{
+    background-color: var(--nav-hover);
 }
 
 summary::after {
@@ -382,6 +395,7 @@ summary::after {
     transition: 0.2s;
     position: absolute; 
     right: 1rem;
+    top:1rem;
 }
 
 details[open] summary {
