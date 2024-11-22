@@ -1,3 +1,4 @@
+//Carousel javascript
 const track = document.querySelector('.carousel-track');
 const images = Array.from(track.children); 
 const mainImage = document.querySelector('.main-img'); 
@@ -52,5 +53,17 @@ img.addEventListener('click', () => {
 updateMainImage(0);
 
 
+
+//heart button fill
+document.querySelector('.carousel-button').addEventListener('click', function () {
+  const heart = this.querySelector('.heart path'); // Select the <path> inside the SVG
+  const currentFill = heart.style.fill;
+
+  if (currentFill === 'red') {
+    heart.style.fill = '';
+  } else {
+    heart.style.fill = 'red'; 
+  }
+});
 
 
