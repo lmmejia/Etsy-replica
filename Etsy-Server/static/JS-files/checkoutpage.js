@@ -1,19 +1,36 @@
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const cart = document.getElementById("cart");
+// function myFunction() {
+//     const element = document.querySelector(".wholecart");
+//     element.remove();
+// }
+
+// function toggleContent() {
+//     const hiddenParagraphs = document.querySelectorAll('.more');
+//     const button = document.querySelector('.cart-button2'); 
+//     hiddenParagraphs.forEach(p => {
+//     p.classList.toggle('visible');
+//     });
+// }
+
+
+function removeCartItem() {
+    console.log("remainingItems");
+    // Select the cart item and the empty cart message element
+    const element = document.querySelector('.wholecart');
+    const emptyCartMessage = document.getElementById('emptyCartMessage');
     const cartContainer = document.querySelector('.wholecart');
-  
-    // Attach event listener to the cart
-    cart.addEventListener("click", (event) => { 
-         // Check if a remove button was clicked
-      if (event.target.classList.contains("cart-button2")) {
-        // Find the corresponding cart item
-        const cartItem = event.target.closest(".wholecart");
-        if (cartItem) {
-          // Remove the cart item from the DOM
-          cartItem.remove();
-        }
-      }
-    });
-  });
+
+    // Remove the cart item from the DOM
+    if (element) {
+        element.remove();
+    }
+
+    // Check if the cart is now empty
+    const remainingItems = cartContainer.querySelectorAll('.wholecart'); 
+    console.log(remainingItems);
+    if (remainingItems.length === 0) {
+        // Display the empty cart message
+        emptyCartMessage.style.display = 'block';
+    }
+}

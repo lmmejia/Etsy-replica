@@ -99,7 +99,9 @@
                 </div>
                 <p class="item-info">In 314 carts, 3 bought in the past 24 hours</p>
                 <button class="cart-button1">Save for later</button>
-                <button class="cart-button2">Remove</button>
+                <!-- <button class="cart-button2">Remove</button> -->
+
+                <button class="cart-button2" onclick="removeCartItem()"> Remove</button>
             </div>
             <div class="item-price">
                 <p class="discount-timer">50% off</p>
@@ -160,6 +162,11 @@
 
         </section>
         </div>
+    </div>
+
+    <div class="more" id="emptyCartMessage">
+        <p class="more">Your Cart is Empty.</p>
+        <p class="more"> <a href="#">Discover something unique to fill it up</a> </p>
     </div>
 
     <footer>

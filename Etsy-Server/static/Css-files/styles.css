@@ -753,3 +753,12 @@ footer ul {
     border-radius: 20px;
     cursor: pointer;
 }
+
+.more.visible{
+    display: block;
+}
+
+.more{
+    display: none;
+}
+
