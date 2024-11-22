@@ -169,9 +169,8 @@ transition: .5s;
     width: 3rem;
 }
 
-
 .report{
-    display: block;
+    display: flex;
     color: black;
     font-size: 14px;
     position: absolute;
