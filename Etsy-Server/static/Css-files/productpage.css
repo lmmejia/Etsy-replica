@@ -98,11 +98,18 @@ aside{
     color:black;
 }
 
+
+
 .button-prev {
     position: relative;
     z-index: 1;
     top: 50%;
 }
+
+.carousel-button:hover{
+    background-color: var(--nav-hover);
+}
+
 
 .button-next {
     position: relative;
@@ -356,14 +363,17 @@ h2 {
 
 /* drop down */
 details {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     position: relative; 
+    padding: 0.5rem;
 }
+
 
 summary {
     display: block;
     font-weight: bold;
+    padding: 0.5rem;
 }
 
 summary::after {
@@ -381,6 +391,10 @@ details[open] summary {
 details[open] > summary::after {
     transform: rotate(180deg);
     margin-right: 0;
+}
+
+.details :hover{
+    background-color: #fcc7a2;
 }
 
 .highlight{
