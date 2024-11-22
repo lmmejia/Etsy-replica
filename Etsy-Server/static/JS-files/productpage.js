@@ -77,3 +77,21 @@ button.addEventListener('click', function () {
 
 
 
+//Dropdown
+function toggleContent() {
+  const hiddenParagraphs = document.querySelectorAll('.more');
+  const button = document.querySelector('#read'); 
+
+  hiddenParagraphs.forEach(p => {
+    p.classList.toggle('visible');
+  });
+
+  //changes button text
+  if (button.innerHTML == "Learn more about this item") {
+    button.innerHTML = "Less"; 
+  } else {
+    button.innerHTML = "Learn more about this item";
+  }
+}
+
+

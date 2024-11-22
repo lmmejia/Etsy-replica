@@ -32,6 +32,10 @@
     width: 1.5rem;
 }
 
+.carousel-sparkle{
+    height: 1.25rem;
+    width: 1.25rem;
+}
 .next{
     height: 1.5rem;
     width: 1.5rem;
@@ -371,4 +375,10 @@ footer li{
     padding: 2.5px;
 }
 
+.more {
+    display: none;
+}
 
+.more.visible {
+    display: block;
+  }

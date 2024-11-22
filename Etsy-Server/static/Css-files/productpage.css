@@ -110,19 +110,24 @@ aside{
     top: 50%;
 }
 
-#etsys-pick {
+.etsys-pick {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 3rem;
-    height: 3rem;
-    color:black;
+    background-color: #fcc7a2;
+    gap: 4px;
+    border-radius: 15px;
+    height: 2rem;
+    padding: 4px 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 5rem;
+}
+
+.etsys-pick p {
+    font-size: 14px;
+    color: black;
+    margin: 0;
+    border-bottom: 2px dotted;
 }
 
 /* Track */
@@ -362,7 +367,6 @@ summary {
 }
 
 summary::after {
-    /* margin-left: 17rem; */
     display: inline-block;
     content: 'v';
     transition: 0.2s;
@@ -379,6 +383,9 @@ details[open] > summary::after {
     margin-right: 0;
 }
 
+.highlight{
+    padding: 0;
+}
 
 .drop{
     display: flex;
@@ -398,8 +405,8 @@ details[open] > summary::after {
 .drop p{
     color: black;
     padding-left: 0.5rem;
+    margin: 0.5rem;
 }
-
 
 
 /* footer */
