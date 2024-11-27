@@ -14,6 +14,7 @@
 // }
 
 
+
 function removeCartItem() {
     console.log("remainingItems");
     // Select the cart item and the empty cart message element
@@ -26,11 +27,14 @@ function removeCartItem() {
         element.remove();
     }
 
-    // Check if the cart is now empty
-    const remainingItems = cartContainer.querySelectorAll('.wholecart'); 
-    console.log(remainingItems);
-    if (remainingItems.length === 0) {
-        // Display the empty cart message
+    // // Check if the cart is now empty
+    const remainingItems = cartContainer.querySelectorAll('.wholecart');  
+    console.log("remainingItems");
+    // if (remainingItems.length === 0) {
+    //     emptyCartMessage.style.display = 'block';
+    // }
+    if (emptyCartMessage.length === 0) {
         emptyCartMessage.style.display = 'block';
     }
+    console.log("Cart is empty, showing empty message");
 }

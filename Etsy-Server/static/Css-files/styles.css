@@ -762,3 +762,11 @@ footer ul {
     display: none;
 }
 
+#emptyCartMessage {
+    display: none; /* Initially hidden */
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
