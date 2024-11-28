@@ -1,83 +1,40 @@
-
-
-#categories-bar {
-    display:flex;
-    align-items: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-#categories-button {
-    margin-left: 0.5rem;
-    margin-right: 0;
-}
-
-.category-h a {
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    border-radius: 5rem;
-    padding: 0.5rem;
-    margin-right:0;
-}
-
-
-.category-h button{
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    color: black;
-    margin-right: 0;
-}
-.category-h button :hover{
-    background-color: var(--nav-hover);
-}
-
-.navigation a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color:black;
-
-}
-
-
-/* aside */
-aside{
-    float: right;
-    background-color: white;
-    max-width: 25%;
-}
-
 /* main */
+main{
+    display: flex;
+}
+
+.main-content {
+    padding: 0 3rem;
+}
+
 /* Main Carousel Container */
 .carousel {
     display: flex;
     gap: 20px;
-    width: 100%;
-    max-height: 40rem;
-    margin: 3rem 0;
+    width: auto;
+    max-height: 36rem;
+    margin: 3rem 3rem 3rem 0;
     justify-content: center; 
     overflow: hidden;
     position: relative;
+
 }
 
 .carousel-main {
     flex: 1;
     display: flex;
     max-width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-img {
-    width: 100%; /* Adjust size as needed */
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
+    transition: transform 0.3s ease;   
+}
 
 /* Buttons */
 .carousel button{
@@ -96,31 +53,48 @@ aside{
     color:black;
 }
 
+.carousel-button:hover{
+    background-color: var(--nav-hover);
+}
+
 .button-prev {
     position: relative;
     z-index: 1;
-    top: 17rem;
+    top: 50%;
+}
+
+.button-prev:hover{
+    background-color: var(--nav-hover);
 }
 
 .button-next {
     position: relative;
     z-index: 1;
-    top: 17rem;
+    top: 50%;
 }
 
-#etsys-pick {
+.button-next:hover{
+    background-color: var(--nav-hover);
+}
+
+.etsys-pick {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 3rem;
-    height: 3rem;
-    color:black;
+    background-color: #fcc7a2;
+    gap: 4px;
+    border-radius: 15px;
+    height: 2rem;
+    padding: 4px 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 5rem;
+}
+
+.etsys-pick p {
+    font-size: 14px;
+    color: black;
+    margin: 0;
+    border-bottom: 2px dotted;
 }
 
 /* Track */
@@ -140,10 +114,10 @@ aside{
 }
 
 .img:after{
-transition: .5s;
+    transition: .5s;
 }
 
-/* Thumbnail Items in Track */
+/* Thumbnails in Track */
 .carousel-track img {
     width: 60px;
     height: 60px;
@@ -167,25 +141,29 @@ transition: .5s;
     width: 3rem;
 }
 
-
 .report{
-    display: block;
+    display: flex;
     color: black;
     font-size: 14px;
     position: absolute;
-    top: 55rem; 
+    top: 51rem; 
     right: 40%;
     padding: 5px 10px;
-    display: flex;
     align-items: center;
     gap: 5px; 
+}
+
+/* aside */
+aside{
+    float: right;
+    background-color: white;
+    max-width: 25%;
 }
 
 /* product description aside */
 .product {
     max-width: 30%;
-    margin: 20px 0 20px 4rem;
-    /* padding: 20 0 20px 20px; */
+    /* margin: 20px 0 20px 4rem; */
     background-color: #fff;
     border-radius: 8px;
     font-size: 16px;
@@ -260,14 +238,12 @@ h2 {
     margin: 0;
 }
 
-
 .product-description {
     padding-right: 2rem;
     font-size: 1rem;
     color: rgb(86, 86, 86);
     margin-bottom: 6px;
 }
-
 
 .seller-info {
     display: flex;
@@ -292,8 +268,6 @@ h2 {
     align-items: center;
     gap: 5px;
 }
-
-
 
 /* Payment Info Section */
 .payment-info {
@@ -331,7 +305,6 @@ h2 {
     align-items: center;
 }
 
-
 .star-seller-info p {
     font-size: 14px;
     color: #555;
@@ -344,30 +317,47 @@ h2 {
     text-decoration: underline;
 }
 
-
 .add-to-cart:hover {
     background-color: #6c6c6c; 
 }
 
 /* drop down */
+.more {
+    display: none;
+}
+
+.more.visible {
+    display: block;
+}
+
 details {
-    border: 1px solid white;
-    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
     position: relative; 
 }
 
 summary {
+    position: relative;
     display: block;
     font-weight: bold;
+    border-radius: 20px;
+    right:1rem;
+}
+summary p{
+    position: relative;
+    padding: 1rem;
+}
+
+summary:hover{
+    background-color: var(--nav-hover);
 }
 
 summary::after {
-    /* margin-left: 17rem; */
     display: inline-block;
     content: 'v';
     transition: 0.2s;
     position: absolute; 
     right: 1rem;
+    top:1rem;
 }
 
 details[open] summary {
@@ -379,6 +369,13 @@ details[open] > summary::after {
     margin-right: 0;
 }
 
+.details :hover{
+    background-color: #fcc7a2;
+}
+
+.highlight{
+    padding: 0;
+}
 
 .drop{
     display: flex;
@@ -391,72 +388,31 @@ details[open] > summary::after {
     font-size: 16px;
 }
 
-.drop h5{
-    color: black;
-    font-size: 16px;
+.fade{
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.162) 25%,rgba(255, 255, 255, 0.778) 100%);
 }
+.fade.none {
+    display: none;
+}
+
 .drop p{
     color: black;
     padding-left: 0.5rem;
+    margin: 0.5rem;
 }
 
-
-
-/* footer */
-
-.footer-main{
-    display: flex;
-    background-color: var(--footer-bright);
-}
-.Energy{
-    display: flex;
-    background-color: var(--footer-light);
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.Energy p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem 1rem 0 1rem;
-    font-size: 16px;
-    color: white;
-    width:max-content;
-    border-bottom: 3px dotted;
-    margin-bottom: 2rem;
-}
-
-.App{
-    background-color: var(--footer-app);
-    padding:2rem 10rem;
-    margin-left: 2rem;
-}
-
-.download-app{
-    background-color: var(--footer-bright);
+#read{
+    background-color: white;
+    padding: 12px 20px;
     border: none;
-    color: white;
-    font-weight:bold ;
-    padding: 1rem 1rem;
     border-radius: 20px;
     cursor: pointer;
-    text-decoration: none;
-    margin-top: 1rem;
-    min-width:max-content;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-section.Energy{
-    background-color: var(--footer-light);
+#read:hover{
+    background-color: var(--nav-hover);
 }
-
-.app-bg {
-    display: flex;
-    border-radius: 1rem;
-    max-width: fit-content;
-    margin: 0 auto;
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
-}
-

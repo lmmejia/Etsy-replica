@@ -32,15 +32,27 @@
     width: 1.5rem;
 }
 
+.carousel-sparkle{
+    height: 1.25rem;
+    width: 1.25rem;
+}
 .next{
     height: 1.5rem;
     width: 1.5rem;
 }
 
-.heart{
+.heart1{
     height: 1.5rem;
     width: 1.5rem;
     fill: black;
+    position: absolute;
+    z-index: 10;
+}
+
+.heart2{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: maroon;
     position: absolute;
     z-index: 10;
 }
@@ -96,8 +108,8 @@
 }
 
 .flag{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 .prev{
@@ -115,9 +127,10 @@
     z-index: 3;
     position:absolute;
 }
+
+
  /* colors and body */
 body {
-    /** define custom properties so we can reference and change styles easily */
     --etsy-orange:#f1641e;
     --text-demand: #d00739;
     --price-color: #0f743b ;
@@ -128,7 +141,7 @@ body {
     --footer-bright:#2638c0; 
     --nav-hover: #0e0e0e17;
 
-    color: var(--black);
+    color: black;
     line-height: 1.5rem;
     margin: 0;
     padding: 0;
@@ -166,6 +179,14 @@ nav ul a {
     align-items: center;
 }
 
+.navigation a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+
+}
+
 .categories {
     background: none;
     border: none;
@@ -174,6 +195,42 @@ nav ul a {
     color: #333;
     margin-right: 0;
 }
+
+#categories-bar {
+    display:flex;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#categories-button {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+.category-h a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    margin-right:0;
+}
+
+.category-h button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    margin-right: 0;
+}
+.category-h button :hover{
+    background-color: var(--nav-hover);
+}
+
 
 .search-container {
     position: relative;
@@ -190,8 +247,6 @@ nav ul a {
     border-width: 2px;
     box-sizing: border-box;
 }
-
-
 
 .search-button {
     background-color: var(--etsy-orange);
@@ -296,7 +351,6 @@ nav ul a {
     color: #333;
 }
 
-/* small nav */
 .navigate{ 
     display: flex;
     flex-direction: row;
@@ -319,15 +373,6 @@ nav ul a {
     display: flex;
     margin: 0;
 }
-
-main{
-    display: flex;
-}
-
-.main-content {
-    padding: 0 3rem;
-}
-
 
 /* Footer */
 
@@ -363,4 +408,58 @@ footer li{
     padding: 2.5px;
 }
 
+.footer-main{
+    display: flex;
+    background-color: var(--footer-bright);
+}
+.Energy{
+    display: flex;
+    background-color: var(--footer-light);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
+.Energy p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 16px;
+    color: white;
+    width:max-content;
+    border-bottom: 3px dotted;
+    margin-bottom: 2rem;
+}
+
+.App{
+    background-color: var(--footer-app);
+    padding:2rem 10rem;
+    margin-left: 2rem;
+}
+
+.download-app{
+    background-color: var(--footer-bright);
+    border: none;
+    color: white;
+    font-weight:bold ;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+    min-width:max-content;
+}
+
+section.Energy{
+    background-color: var(--footer-light);
+}
+
+.app-bg {
+    display: flex;
+    border-radius: 1rem;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+}
