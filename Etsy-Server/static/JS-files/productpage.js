@@ -10,7 +10,8 @@ let currentIndex = 0;
 function updateMainImage(index) {
 images.forEach(img => img.classList.remove('active'));
 images[index].classList.add('active');
-// Updates image and alt
+
+// Updates image
 mainImage.src = images[index].src;
 mainImage.alt = images[index].alt;
 }
@@ -81,15 +82,23 @@ button.addEventListener('click', function () {
 function toggleContent() {
   const hiddenParagraphs = document.querySelectorAll('.more');
   const button = document.querySelector('#read'); 
+  const fadeParagraph = document.querySelector('.fade');
 
   hiddenParagraphs.forEach(p => {
-    p.classList.toggle('visible');
+    p.classList.toggle('visible'); 
   });
+  
+  if (fadeParagraph.classList.contains('fade')) {
+    fadeParagraph.classList.remove('fade');  
+  } else {
+    fadeParagraph.classList.add('fade');  
+  }
 
   //changes button text
   if (button.innerHTML == "Learn more about this item") {
     button.innerHTML = "Less"; 
-  } else {
+  } 
+  else {
     button.innerHTML = "Learn more about this item";
   }
 }
