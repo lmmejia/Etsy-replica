@@ -391,6 +391,9 @@ details[open] > summary::after {
 .fade{
     mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.162) 25%,rgba(255, 255, 255, 0.778) 100%);
 }
+.fade.none {
+    display: none;
+}
 
 .drop p{
     color: black;
