@@ -87,19 +87,15 @@ function toggleContent() {
   hiddenParagraphs.forEach(p => {
     p.classList.toggle('visible'); 
   });
-  
-  if (fadeParagraph.classList.contains('fade')) {
-    fadeParagraph.classList.remove('fade');  
-  } else {
-    fadeParagraph.classList.add('fade');  
-  }
 
   //changes button text
   if (button.innerHTML == "Learn more about this item") {
     button.innerHTML = "Less"; 
+    fadeParagraph.classList.toggle('none'); //fade
   } 
   else {
     button.innerHTML = "Learn more about this item";
+    fadeParagraph.classList.toggle('none');
   }
 }
 
