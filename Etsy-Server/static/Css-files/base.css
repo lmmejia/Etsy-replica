@@ -374,15 +374,19 @@ nav ul a {
     margin: 0;
 }
 
+
+
 /* Footer */
 
 .footer{
+    display: flex;
     background-color: var(--footer-bright);
     padding: 2rem 3rem;
     gap: 7rem;
 }
 
 .section-title {
+    display: flex;
     font-size: 1.2em; 
     font-weight: bold;
     margin-bottom: 8px;
