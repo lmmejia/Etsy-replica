@@ -1,6 +1,5 @@
-
 body {
-    /** define custom properties so we can reference and change styles easily */
+    /* define custom properties so we can reference and change styles easily */
     --etsy-orange:#f1641e;
     --text-demand: #d00739;
     --price-color: #0f743b ;
@@ -214,6 +213,11 @@ aside{
     max-width: 30%;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -812,7 +816,5 @@ footer ul {
     color: #555;
     margin-top: 150px;
 }
-
-
 
 
